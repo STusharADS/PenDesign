@@ -18,16 +18,16 @@ public class Demo {
 
         try {
             System.out.println("Trying to write without start()...");
-            System.out.println(pen.write("Hello SST"));
+            System.out.println(pen.write("Hello myself, Tushar"));
         } catch (Exception ex) {
             System.out.println("Expected error: " + ex.getMessage());
         }
 
         pen.start();
         System.out.println("After start(): " + pen.getMechanismStatus());
-        System.out.println("Write output: " + pen.write("Low level design is fun"));
+        System.out.println("Write output: " + pen.write("Low level design is tough"));
         System.out.println("Ink left: " + pen.getInkLevel() + "%");
-
+        //color stuff
         System.out.println("Refill output: " + pen.refill("Red"));
         System.out.println("Current color: " + pen.getColor());
         System.out.println("Ink left after refill: " + pen.getInkLevel() + "%");
